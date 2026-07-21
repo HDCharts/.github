@@ -87,4 +87,4 @@ fun BasicLineChart() {
 
 ## Contributing
 
-Start with the [documentation](https://charts.harisdautovic.com/) and the [charts repository](https://github.com/HDCharts/charts). Issues, fixes, examples, and documentation improvements are welcome.
+Start with the [documentation](https://charts.harisdautovic.com/) and use [charts-projects](https://github.com/HDCharts/charts-projects) to set up the local workspace. See the [contributing guide](https://github.com/HDCharts/.github/blob/main/CONTRIBUTING.md) for pull request guidelines.
