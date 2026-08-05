@@ -20,17 +20,17 @@
 </p>
 
 <p align="center">
-  <a href="https://charts.harisdautovic.com/">Documentation</a>
+  <a href="https://charts.hdcode.dev/">Documentation</a>
   ·
-  <a href="https://charts.harisdautovic.com/demo">Demo</a>
+  <a href="https://charts.hdcode.dev/demo">Demo</a>
   ·
-  <a href="https://charts.harisdautovic.com/playground">Playground</a>
+  <a href="https://charts.hdcode.dev/playground">Playground</a>
   ·
   <a href="https://central.sonatype.com/artifact/io.github.dautovicharis/charts/overview">Maven Central</a>
 </p>
 
 <p align="center">
-  <a href="https://charts.harisdautovic.com/demo">
+  <a href="https://charts.hdcode.dev/demo">
     <img width="893" alt="HDCharts demo" src="https://github.com/user-attachments/assets/9bd7fc79-93c2-434a-a70c-d3a3a6dc9db4" />
   </a>
 </p>
