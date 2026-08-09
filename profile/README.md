@@ -1,7 +1,8 @@
 <p align="center">
   <img
-    src="https://github.com/dautovicharis/Charts/assets/7049715/4150f102-1b05-4fd7-ab01-63480d2e6d50"
+    src="./hdcharts-logo.svg"
     alt="HDCharts"
+    align="center"
     width="260"
   />
 </p>
@@ -13,6 +14,9 @@
   <a href="https://central.sonatype.com/repository/maven-snapshots/io/github/dautovicharis/charts/maven-metadata.xml">
     <img src="https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fcentral.sonatype.com%2Frepository%2Fmaven-snapshots%2Fio%2Fgithub%2Fdautovicharis%2Fcharts%2Fmaven-metadata.xml&label=Snapshots&color=4285F4" alt="Snapshots" />
   </a>
+  <img src="https://img.shields.io/badge/Compose_Multiplatform-1.11.1-4285F4?logo=jetpackcompose" alt="Compose Multiplatform 1.11.1" />
+  <img src="https://img.shields.io/badge/Kotlin_Multiplatform-2.4.10-0095D5?logo=kotlin" alt="Kotlin Multiplatform 2.4.10" />
+  <img src="https://img.shields.io/badge/AGP-9.3.1-2E7D32?logo=android" alt="Android Gradle Plugin 9.3.1" />
 </p>
 
 <p align="center">
@@ -22,7 +26,9 @@
 <p align="center">
   <a href="https://charts.hdcode.dev/">Documentation</a>
   ·
-  <a href="https://charts.hdcode.dev/demo">Demo</a>
+  <a href="https://charts.hdcode.dev/demo">Production Demo</a>
+  ·
+  <a href="https://charts.hdcode.dev/demo/snapshot/">Snapshot Demo</a>
   ·
   <a href="https://charts.hdcode.dev/playground">Playground</a>
   ·
@@ -46,7 +52,9 @@
 
 ## Get Started
 
-Install the library from Maven Central:
+### All chart types
+
+Use the umbrella artifact when you want all chart types with the simplest setup.
 
 ```kotlin
 commonMain.dependencies {
@@ -54,7 +62,9 @@ commonMain.dependencies {
 }
 ```
 
-Use individual modules when you only need specific chart types:
+### Individual chart modules
+
+Use independent modules when you want only specific chart types and smaller dependency footprint.
 
 ```kotlin
 commonMain.dependencies {
@@ -65,6 +75,24 @@ commonMain.dependencies {
     implementation("io.github.dautovicharis:charts-stacked-bar:<version>")
     implementation("io.github.dautovicharis:charts-stacked-area:<version>")
     implementation("io.github.dautovicharis:charts-radar:<version>")
+}
+```
+
+### BOM
+
+Use BOM for version alignment where Gradle platforms are supported.
+For KMP `commonMain`, keep explicit versions as shown above.
+
+```kotlin
+dependencies {
+    implementation(platform("io.github.dautovicharis:charts-bom:<version>"))
+    implementation("io.github.dautovicharis:charts-line")
+    implementation("io.github.dautovicharis:charts-pie")
+    implementation("io.github.dautovicharis:charts-bar")
+    implementation("io.github.dautovicharis:charts-histogram")
+    implementation("io.github.dautovicharis:charts-stacked-bar")
+    implementation("io.github.dautovicharis:charts-stacked-area")
+    implementation("io.github.dautovicharis:charts-radar")
 }
 ```
 
