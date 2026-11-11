@@ -18,11 +18,11 @@
     <img src="https://img.shields.io/maven-central/v/io.github.hdcharts/charts.svg?label=Maven%20Central" alt="Maven Central" />
   </a>
   <a href="https://central.sonatype.com/repository/maven-snapshots/io/github/hdcharts/charts/maven-metadata.xml">
-    <img src="https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fcentral.sonatype.com%2Frepository%2Fmaven-snapshots%2Fio%2Fgithub%2Fhdcharts%2Fcharts%2Fmaven-metadata.xml&label=Snapshots&color=4285F4" alt="Snapshots" />
+    <img src="https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fcentral.sonatype.com%2Frepository%2Fmaven-snapshots%2Fio%2Fgithub%2Fhdcharts%2Fcharts%2Fmaven-metadata.xml&strategy=latestProperty&label=Snapshots&color=4285F4" alt="Snapshots" />
   </a>
-  <img src="https://img.shields.io/badge/Compose_Multiplatform-1.11.1-4285F4?logo=jetpackcompose" alt="Compose Multiplatform 1.11.1" />
-  <img src="https://img.shields.io/badge/Kotlin_Multiplatform-2.4.10-0095D5?logo=kotlin" alt="Kotlin Multiplatform 2.4.10" />
-  <img src="https://img.shields.io/badge/AGP-9.3.1-2E7D32?logo=android" alt="Android Gradle Plugin 9.3.1" />
+  <img src="https://img.shields.io/badge/Compose_Multiplatform-1.12.2-4285F4?logo=jetpackcompose" alt="Compose Multiplatform 1.12.2" />
+  <img src="https://img.shields.io/badge/Kotlin_Multiplatform-2.4.21-0095D5?logo=kotlin" alt="Kotlin Multiplatform 2.4.21" />
+  <img src="https://img.shields.io/badge/AGP-9.5.0-2E7D32?logo=android" alt="Android Gradle Plugin 9.5.0" />
 </p>
 
 <p align="center">
