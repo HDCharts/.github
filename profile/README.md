@@ -1,24 +1,24 @@
 <p align="center">
   <img
-    src="./readme-assets/hdcharts-logo-light.svg#gh-light-mode-only"
+    src="https://raw.githubusercontent.com/HDCharts/charts/main/readme-assets/hdcharts-logo-light.svg#gh-light-mode-only"
     alt="HDCharts logo"
     align="center"
-    width="260"
+    width="300"
   />
   <img
-    src="./readme-assets/hdcharts-logo-dark.svg#gh-dark-mode-only"
+    src="https://raw.githubusercontent.com/HDCharts/charts/main/readme-assets/hdcharts-logo-dark.svg#gh-dark-mode-only"
     alt="HDCharts logo"
     align="center"
-    width="260"
+    width="300"
   />
 </p>
 
 <p align="center">
-  <a href="https://central.sonatype.com/artifact/io.github.dautovicharis/charts/overview">
-    <img src="https://img.shields.io/maven-central/v/io.github.dautovicharis/charts.svg?label=Maven%20Central" alt="Maven Central" />
+  <a href="https://central.sonatype.com/artifact/io.github.hdcharts/charts/overview">
+    <img src="https://img.shields.io/maven-central/v/io.github.hdcharts/charts.svg?label=Maven%20Central" alt="Maven Central" />
   </a>
-  <a href="https://central.sonatype.com/repository/maven-snapshots/io/github/dautovicharis/charts/maven-metadata.xml">
-    <img src="https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fcentral.sonatype.com%2Frepository%2Fmaven-snapshots%2Fio%2Fgithub%2Fdautovicharis%2Fcharts%2Fmaven-metadata.xml&label=Snapshots&color=4285F4" alt="Snapshots" />
+  <a href="https://central.sonatype.com/repository/maven-snapshots/io/github/hdcharts/charts/maven-metadata.xml">
+    <img src="https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fcentral.sonatype.com%2Frepository%2Fmaven-snapshots%2Fio%2Fgithub%2Fhdcharts%2Fcharts%2Fmaven-metadata.xml&label=Snapshots&color=4285F4" alt="Snapshots" />
   </a>
   <img src="https://img.shields.io/badge/Compose_Multiplatform-1.11.1-4285F4?logo=jetpackcompose" alt="Compose Multiplatform 1.11.1" />
   <img src="https://img.shields.io/badge/Kotlin_Multiplatform-2.4.10-0095D5?logo=kotlin" alt="Kotlin Multiplatform 2.4.10" />
@@ -36,13 +36,21 @@
   ·
   <a href="https://charts.hdcode.dev/demo/snapshot/">Snapshot Demo</a>
   ·
-  <a href="https://central.sonatype.com/artifact/io.github.dautovicharis/charts/overview">Maven Central</a>
+  <a href="https://central.sonatype.com/artifact/io.github.hdcharts/charts/overview">Maven Central</a>
 </p>
 
 <p align="center">
-  <a href="https://charts.hdcode.dev/demo">
-    <img width="893" alt="HDCharts demo" src="https://github.com/user-attachments/assets/9bd7fc79-93c2-434a-a70c-d3a3a6dc9db4" />
-  </a>
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/HDCharts/charts/main/sample/androidApp/src/screenshotTestDebug/reference/io/github/hdcharts/app/screenshot/ReadmeScreenshotTestKt/ReadmeShowcasePreview_README%20dark_278d6fe8_0.png"
+    />
+    <img
+      width="893"
+      alt="HDCharts histogram, stacked area, bar, donut, multi-line, and radar charts"
+      src="https://raw.githubusercontent.com/HDCharts/charts/main/sample/androidApp/src/screenshotTestDebug/reference/io/github/hdcharts/app/screenshot/ReadmeScreenshotTestKt/ReadmeShowcasePreview_README%20light_9696eabb_0.png"
+    />
+  </picture>
 </p>
 
 ## Projects
@@ -61,7 +69,7 @@ Use the umbrella artifact when you want all chart types with the simplest setup.
 
 ```kotlin
 commonMain.dependencies {
-    implementation("io.github.dautovicharis:charts:<version>")
+    implementation("io.github.hdcharts:charts:<version>")
 }
 ```
 
@@ -71,13 +79,17 @@ Use independent modules when you want only specific chart types and smaller depe
 
 ```kotlin
 commonMain.dependencies {
-    implementation("io.github.dautovicharis:charts-line:<version>")
-    implementation("io.github.dautovicharis:charts-pie:<version>")
-    implementation("io.github.dautovicharis:charts-bar:<version>")
-    implementation("io.github.dautovicharis:charts-histogram:<version>")
-    implementation("io.github.dautovicharis:charts-stacked-bar:<version>")
-    implementation("io.github.dautovicharis:charts-stacked-area:<version>")
-    implementation("io.github.dautovicharis:charts-radar:<version>")
+    implementation("io.github.hdcharts:line:<version>")
+    implementation("io.github.hdcharts:pie:<version>")
+    implementation("io.github.hdcharts:bar:<version>")
+    implementation("io.github.hdcharts:histogram:<version>")
+    implementation("io.github.hdcharts:stacked-bar:<version>")
+    implementation("io.github.hdcharts:stacked-area:<version>")
+    implementation("io.github.hdcharts:radar:<version>")
+    implementation("io.github.hdcharts:gauge:<version>")
+    implementation("io.github.hdcharts:scatter:<version>")
+    implementation("io.github.hdcharts:heatmap:<version>")
+    implementation("io.github.hdcharts:waterfall:<version>")
 }
 ```
 
@@ -88,31 +100,47 @@ For KMP `commonMain`, keep explicit versions as shown above.
 
 ```kotlin
 dependencies {
-    implementation(platform("io.github.dautovicharis:charts-bom:<version>"))
-    implementation("io.github.dautovicharis:charts-line")
-    implementation("io.github.dautovicharis:charts-pie")
-    implementation("io.github.dautovicharis:charts-bar")
-    implementation("io.github.dautovicharis:charts-histogram")
-    implementation("io.github.dautovicharis:charts-stacked-bar")
-    implementation("io.github.dautovicharis:charts-stacked-area")
-    implementation("io.github.dautovicharis:charts-radar")
+    implementation(platform("io.github.hdcharts:bom:<version>"))
+    implementation("io.github.hdcharts:line")
+    implementation("io.github.hdcharts:pie")
+    implementation("io.github.hdcharts:bar")
+    implementation("io.github.hdcharts:histogram")
+    implementation("io.github.hdcharts:stacked-bar")
+    implementation("io.github.hdcharts:stacked-area")
+    implementation("io.github.hdcharts:radar")
+    implementation("io.github.hdcharts:gauge")
+    implementation("io.github.hdcharts:scatter")
+    implementation("io.github.hdcharts:heatmap")
+    implementation("io.github.hdcharts:waterfall")
 }
 ```
 
 ## Example
 
 ```kotlin
-@Composable
-fun BasicLineChart() {
-    val values = listOf(42f, 38f, 45f, 51f, 47f, 54f, 49f)
-    val labels = listOf("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+import androidx.compose.runtime.Composable
+import io.github.hdcharts.core.model.toChartData
+import io.github.hdcharts.line.LineChart
 
-    val dataSet = values.toChartDataSet(
-        title = "Daily Support Tickets",
-        labels = labels,
+data class Nutrient(val name: String, val calories: Double)
+
+@Composable
+fun NutrientCaloriesChart() {
+    val nutrients = listOf(
+        Nutrient("Carbs", 240.0),
+        Nutrient("Protein", 180.0),
+        Nutrient("Fat", 320.0),
     )
 
-    LineChart(dataSet)
+    val data = nutrients.toChartData(
+        value = { it.calories },
+        category = { it.name },
+    )
+
+    LineChart(
+        data = data,
+        title = "Calories by nutrient",
+    )
 }
 ```
 
