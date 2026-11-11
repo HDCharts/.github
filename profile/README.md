@@ -36,8 +36,6 @@
   ·
   <a href="https://charts.hdcode.dev/demo/snapshot/">Snapshot Demo</a>
   ·
-  <a href="https://charts.hdcode.dev/playground">Playground</a>
-  ·
   <a href="https://central.sonatype.com/artifact/io.github.dautovicharis/charts/overview">Maven Central</a>
 </p>
 
@@ -53,7 +51,6 @@
 | --- | --- |
 | [charts](https://github.com/HDCharts/charts) | Core Kotlin Multiplatform chart library for Compose apps. |
 | [charts-docs](https://github.com/HDCharts/charts-docs) | Documentation site and published examples. |
-| [charts-playground](https://github.com/HDCharts/charts-playground) | Interactive playground for trying chart configurations. |
 | [compose-gif-recorder](https://github.com/hdcodedev/compose-gif-recorder) | Utility used to record Compose chart examples as GIFs. |
 
 ## Get Started
@@ -121,4 +118,4 @@ fun BasicLineChart() {
 
 ## Contributing
 
-Start with [charts-projects](https://github.com/HDCharts/charts-projects) to set up the local workspace.
+Start with [charts-workspace](https://github.com/HDCharts/charts-workspace) to set up the local workspace.
